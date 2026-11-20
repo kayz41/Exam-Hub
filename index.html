@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Web Design Lab — Exam Hub</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui;background:#101522;color:#f4f6fb}header{padding:36px 20px;text-align:center;background:linear-gradient(135deg,#172b4d,#202044)}h1{margin:0 0 8px;font-size:clamp(1.7rem,5vw,2.5rem)}header p{margin:0;color:#c7d2e5}.wrap{max-width:1050px;margin:26px auto;padding:0 16px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:#1b2435;border:1px solid #344158;border-radius:14px;padding:18px}.num{color:#9dbaff;font-weight:800;font-size:.8rem;letter-spacing:.12em}.card h2{font-size:1.1rem;margin:6px 0 14px}.actions{display:flex;gap:9px;flex-wrap:wrap}a{display:inline-block;text-decoration:none;padding:9px 12px;border-radius:8px;font-weight:650;font-size:.9rem}.source{background:#e8edf7;color:#172033}.live{background:#a7f3d0;color:#064e3b}footer{text-align:center;color:#9aa8bf;padding:24px}
+</style></head><body><header><h1>Web Design Lab Practicals</h1><p>Exam access hub · Questions 1–10</p></header><main class="wrap"><div class="grid" id="items"></div></main><footer>Use only resources permitted by your examination rules.</footer><script>
+const questions=[
+["01","Department Homepage","Q1-Department-Homepage","q1-department-homepage"],
+["02","MTN Uganda Website","Q2-MTN-Uganda-Website","q2-mtn-uganda-website"],
+["03","Makerere Exam Results","Q3-Web-Design-Practical","q3-makerere-exam-results"],
+["04","URA Portal","Q4-URA-Portal","q4-ura-tin-registration"],
+["05","Serena Hotel Website","Q5-Serena-Hotel-Website","q5-serena-hotel-booking"],
+["06","Chromelite Website","Q6-Chromelite-Website","q6-chromelite-technologies"],
+["07","Survey Website","Q7-Survey-Website","q7-uganda-it-skills-survey"],
+["08","Tech Expo Website","Q8-Tech-Expo-Website","q8-coffee-expo-website"],
+["09","Student Portal","Q9-Student-Portal","q9-isbat-student-portal"],
+["10","Bank Website","Q10-Bank-Website","q10-stanbic-loan-portal"]];
+document.getElementById("items").innerHTML=questions.map(([n,title,repo,site])=>'<article class="card"><div class="num">QUESTION '+n+'</div><h2>'+title+'</h2><div class="actions"><a class="source" target="_blank" rel="noopener" href="https://github.com/kayz41/'+repo+'">GitHub source</a><a class="live" target="_blank" rel="noopener" href="https://'+site+'.vercel.app">Live website</a></div></article>').join("");
+</script></body></html>
